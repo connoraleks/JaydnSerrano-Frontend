@@ -1,2 +1,2 @@
-# Jaydn's Photography Frontend
+# Photography Portfolio Frontend
 by Studio 908
