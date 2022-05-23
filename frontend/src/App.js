@@ -8,11 +8,11 @@ function App() {
   const [mobileFill, setMobileFill] = useState("white");
   useEffect(() => {
     if(mobileMenu){
-      setNavbarVisibility("block w-screen h-screen absolute md:block");
+      setNavbarVisibility("block absolute h-screen w-screen")
       setMobileFill("black");
     }
     else{
-      setNavbarVisibility("hidden md:block w-1/4 flex-grow");
+      setNavbarVisibility("hidden md:block w-1/4 flex-grow")
       setMobileFill("white");
     }
   }, [mobileMenu])
@@ -39,10 +39,6 @@ function App() {
         <Display display={display}></Display>
       </section>
     </main>
-    {/* Footer */}
-    <section className="w-full h-16">
-
-    </section>
     </>
   );
 }
