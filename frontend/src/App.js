@@ -21,7 +21,7 @@ function App() {
     <>
     <main className="h-screen flex">
       {/* Mobile Navbar Toggle */}
-      <section className="block md:hidden p-4 absolute z-10">
+      <section className="block md:hidden p-4 fixed z-10">
         <button onClick={()=> setMobileMenu(!mobileMenu)}>
           <svg viewBox="0 0 100 80" width="3rem" height="2rem">
             <rect width="100%" height="25%" rx="10" fill={mobileFill}></rect>
