@@ -8,12 +8,15 @@ function App() {
   const [mobileFill, setMobileFill] = useState("white");
   useEffect(() => {
     if(mobileMenu){
-      setNavbarVisibility("block absolute h-screen w-screen")
+      setNavbarVisibility("block absolute h-screen w-screen animate-enter")
       setMobileFill("black");
     }
     else{
-      setNavbarVisibility("hidden md:block w-1/4 flex-grow")
-      setMobileFill("white");
+      setNavbarVisibility("block absolute h-screen w-screen animate-exit")
+      setTimeout(() => {
+        setNavbarVisibility("hidden md:block w-1/4 flex-grow");
+        setMobileFill("white");
+      }, 1000)
     }
   }, [mobileMenu])
   useEffect(() => setMobileMenu(false), [display])
