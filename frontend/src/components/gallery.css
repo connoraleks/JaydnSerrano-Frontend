@@ -1,0 +1,4 @@
+/* width */
+#scrollable::-webkit-scrollbar {
+    width: 0;
+}

@@ -2,10 +2,10 @@ import ContactForm from './ContactForm'
 import Home from './Home'
 import Gallery from './Gallery'
 import About from './About'
-const Display = ({display}) => {
+const Display = ({display, setDisplay}) => {
     return (
-        <div className="h-full w-full flex flex-col justify-center items-center text-center p-4 py-24 md:p-8 lg:p16">
-            {display === '#home' && <Home></Home>}
+        <div className="w-full h-full md:w-3/4 flex justify-center items-center">
+            {display === '#home' && <Home setDisplay={setDisplay}></Home>}
             {display === '#gallery' && <Gallery></Gallery>}
             {display === '#about' && <About></About>}
             {display === '#contact' && <ContactForm></ContactForm>}

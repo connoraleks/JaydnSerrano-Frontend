@@ -1,9 +1,8 @@
 const Navbar = ({setDisplay, setMobileMenu}) => {
     const closeWindow = () => setMobileMenu(false);
-    const buttonHover = "text-black hover:text-blue-700"
+    const buttonHover = "text-white text-xl hover:text-blue-500"
     return (
-        <nav className="h-full w-full flex flex-col justify-center gap-24 bg-white bg-opacity-90 backdrop-blur-lg px-4 pb-20 box-border text-center">
-            <h1 className="text-3xl font-bold text-center hover:text-blue-700">Jaydn Serrano<br/>Photography</h1>
+        <nav className="hidden md:flex h-full w-1/4 flex-col justify-center gap-24 bg-black bg-opacity-75 backdrop-blur-lg box-border text-center">
             <div className="w-full flex flex-col justify-center items-center gap-4 text-lg">
                 <button className={buttonHover} onClick={() => {setDisplay("#home"); closeWindow();}}>Home</button>
                 <button className={buttonHover} onClick={() => {setDisplay("#gallery"); closeWindow();}}>Gallery</button>
