@@ -4,7 +4,7 @@ import Gallery from './Gallery'
 import About from './About'
 const Display = ({display, setDisplay}) => {
     return (
-        <div className="w-full h-full md:w-3/4 flex justify-center items-center">
+        <div className="w-full h-full flex justify-center items-center">
             {display === '#home' && <Home setDisplay={setDisplay}></Home>}
             {display === '#gallery' && <Gallery></Gallery>}
             {display === '#about' && <About></About>}

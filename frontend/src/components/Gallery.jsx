@@ -1,81 +1,22 @@
 import "./gallery.css"
 const Gallery = () => {
-    const img = "w-32 md:w-64";
-    const wrapper = "flex justify-center";
+    const img = "";
+    const wrapper = "flex justify-center border-2 border-white rounded-2xl overflow-hidden basis-auto md:basis-1/2 lg:basis-1/3";
     return (
-        <div className="h-full overflow-hidden">
-            <div id="scrollable" className="flex justify-center items-center h-full overflow-y-scroll p-8">
-                <div className="flex flex-wrap gap-16 justify-center items-center">
+        <div className="h-screen overflow-hidden flex justify-center items-center p-8">
+            <div id="scrollable" className="h-full flex justify-center overflow-y-scroll">
+                <div className="h-full gap-8 flex flex-wrap justify-center items-center">
                     <div className={wrapper}>
-                        <img
-                        src="https://source.unsplash.com/900x900/?sketch"
-                        alt="Image"
-                        className={img}
-                        id="img1"
-                        />
-
+                        <img className={img} src={process.env.PUBLIC_URL + '/assets/gallery/1.jpg'} alt="gallery 1"></img>
                     </div>
                     <div className={wrapper}>
-                        <img
-                        src="https://source.unsplash.com/900x900/?city"
-                        alt="Image"
-                        className={img}
-                        id="img2"
-                        />
-
+                        <img className={img} src={process.env.PUBLIC_URL + '/assets/gallery/4.jpg'} alt="gallery 2"></img>
                     </div>
                     <div className={wrapper}>
-                        <img
-                        src="https://source.unsplash.com/900x900/?camera"
-                        alt="Image"
-                        className={img}
-                        id="img3"
-                        />
-
+                        <img className={img} src={process.env.PUBLIC_URL + '/assets/gallery/6.jpg'} alt="gallery 3"></img>
                     </div>
                     <div className={wrapper}>
-                        <img
-                        src="https://source.unsplash.com/900x900/?games"
-                        alt="Image"
-                        className={img}
-                        id="img4"
-                        />
-
-                    </div>
-                    <div className={wrapper}>
-                        <img
-                        src="https://source.unsplash.com/900x900/?sketch"
-                        alt="Image"
-                        className={img}
-                        id="img1"
-                        />
-
-                    </div>
-                    <div className={wrapper}>
-                        <img
-                        src="https://source.unsplash.com/900x900/?city"
-                        alt="Image"
-                        className={img}
-                        id="img2"
-                        />
-
-                    </div>
-                    <div className={wrapper}>
-                        <img
-                        src="https://source.unsplash.com/900x900/?camera"
-                        alt="Image"
-                        className={img}
-                        id="img3"
-                        />
-
-                    </div>
-                    <div className={wrapper}>
-                        <img
-                        src="https://source.unsplash.com/900x900/?games"
-                        alt="Image"
-                        className={img}
-                        id="img4"
-                        />
+                        <img className={img} src={process.env.PUBLIC_URL + '/assets/gallery/8.jpg'} alt="gallery 4"></img>
                     </div>
                 </div>
             </div>

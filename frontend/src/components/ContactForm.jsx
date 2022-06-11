@@ -7,7 +7,7 @@ const ContactForm = () => {
                 <input placeholder="Name" type="text" className="p-2 rounded w-3/5 bg-transparent border-white border placeholder-gray-100 focus:outline-none focus:placeholder-gray-300" id="cname" required />
                 <input placeholder="Email" type="email" className="p-2 rounded w-3/5 bg-transparent border-white border placeholder-gray-100 focus:outline-none focus:placeholder-gray-300" id="cemail" required />
                 <textarea placeholder="Message" className="p-2 rounded w-3/5 bg-transparent border-white border placeholder-gray-100 focus:outline-none focus:placeholder-gray-300" id="cmessage" required />
-                <button type="submit" className="p-2 bg-transparent rounded-xl border-white border hover:border-gray-300 hover:text-gray-300 active:border-blue-700 active:text-blue-700">Submit Message</button>
+                <button type="submit" className="text-lg text-gray-100 rounded-2xl border-gray-200 border-2 w-fit ml-1 transition duration-500 hover:bg-blue-600 hover:border-gray-300 px-4 py-2">Submit</button>
             </form>
         </div>
     );
