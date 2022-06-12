@@ -1,7 +1,7 @@
 const About = () => {
     return (
-        <div className="w-full h-fit flex items-center justify-center px-14 md:px-24">
-            <div className="w-1/2 text-left p-4">
+        <div className="w-full h-screen flex flex-col-reverse lg:flex-row md:px-12 justify-center items-center">
+            <div className="lg:w-1/2 text-left p-4">
                 <h1 className="text-4xl text-white font-bold mb-1">Jaydn Serrano</h1>
                 <p className="text-xl text-white mb-4">22 year old Amateur Photographer.</p>
                 <div className="text-sm md:text-lg flex flex-col gap-1 text-gray-100">
@@ -10,7 +10,7 @@ const About = () => {
                     <p>When not behind the camera you can find him playing guitar, exercising, and spending quality time with loved ones.</p>
                 </div>
             </div>
-            <div className="border-l-2 border-white w-1/2 p-16">
+            <div className="hidden lg:block lg:border-b-0 lg:border-l-2 border-white w-1/2 p-8 lg:p-16">
                 <img className="border-2 border-white rounded-2xl mx-auto" src={process.env.PUBLIC_URL + '/assets/headshot.png'} alt="headshot"></img>
             </div>
         </div>
