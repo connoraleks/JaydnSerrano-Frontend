@@ -4,7 +4,7 @@ import {useState} from 'react';
 function App() {
   const [display, setDisplay] = useState('#home');
   return(
-      <main className="h-screen w-screen black flex">
+      <main className="h-screen w-screen black flex relative justify-center items-center">
         <Navbar setDisplay={setDisplay} display={display}></Navbar>
         <Display setDisplay={setDisplay} display={display}></Display>			
       </main>

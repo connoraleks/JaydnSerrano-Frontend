@@ -4,7 +4,7 @@ import Gallery from './Gallery'
 import About from './About'
 const Display = ({display, setDisplay}) => {
     return (
-        <div className="w-full h-screen flex justify-center lg:items-center overflow-y-scroll">
+        <div className="md:pl-48 w-full h-full flex justify-center lg:items-center overflow-y-scroll">
             <div className="w-full h-fit flex">
                 {display === '#home' && <Home setDisplay={setDisplay}></Home>}
                 {display === '#gallery' && <Gallery></Gallery>}

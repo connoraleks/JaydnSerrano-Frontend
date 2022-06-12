@@ -1,7 +1,7 @@
 const Navbar = ({setDisplay, setMobileMenu}) => {
     const closeWindow = () => setMobileMenu(false);
-    const buttonHover = "text-white text-lg lg:text-xl hover:text-blue-500 px-12 lg:px-16 xl:px-24";
-    const nav = "hidden md:flex h-full flex-col justify-center gap-24 bg-gray-600 bg-opacity-50 backdrop-blur-lg box-border text-center border-r border-white";
+    const buttonHover = "text-white text-lg lg:text-xl hover:text-blue-500";
+    const nav = "hidden w-48 md:flex absolute left-0 h-screen flex-col justify-center gap-24 bg-gray-600 bg-opacity-50 backdrop-blur-lg box-border text-center border-r border-white";
     return (
         <nav className={nav}>
             <div className="w-full flex flex-col justify-center items-center gap-4 text-lg">
