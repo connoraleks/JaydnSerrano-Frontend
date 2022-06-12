@@ -1,7 +1,7 @@
 const Gallery = () => {
     const img = "";
-    const wrapper = "relative h-fit flex justify-center items-center border-2 border-white rounded-2xl overflow-hidden basis-auto md:basis-1/2 lg:basis-1/3 group";
-    const title = "group-hover:h-full group-hover:scale-150 absolute bottom-0 bg-gray-600 bg-opacity-50 backdrop-blur-lg w-full h-1/6 flex justify-center items-center text-auto text-gray-200 overflow-hidden";
+    const wrapper = "relative h-fit flex justify-center items-center border-2 border-white rounded-2xl overflow-hidden basis-auto md:basis-1/2 lg:basis-1/3 group filter-blur-0";
+    const title = "group-hover:h-full group-hover:scale-150 absolute bottom-0 bg-gray-600 bg-opacity-50 backdrop-blur-lg w-full h-1/6 flex justify-center items-center text-auto text-gray-200";
     return (
         <div className="h-fit gap-8 flex flex-wrap justify-center items-center p-8">
                 <button className={wrapper} style={{transition: "all 0.5s ease"}} >
