@@ -1,6 +1,6 @@
-const About = () => {
+const About = ({about}) => {
     return (
-        <div className="w-full h-screen flex flex-col-reverse lg:flex-row md:px-12 justify-center items-center">
+        <div ref={about} className="w-full h-screen flex flex-col-reverse lg:flex-row md:px-12 justify-center items-center">
             <div className="lg:w-1/2 text-left p-4">
                 <h1 className="text-4xl text-white font-bold mb-1">Jaydn Serrano</h1>
                 <p className="text-xl text-white mb-4">22 year old Amateur Photographer.</p>

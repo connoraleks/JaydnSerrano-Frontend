@@ -1,12 +1,12 @@
 import Display from "./components/Display";
 import Navbar from "./components/Navbar";
-import {useState} from 'react';
+import {useRef} from 'react';
 function App() {
-  const [display, setDisplay] = useState('#home');
+  const pages = [useRef(null), useRef(null), useRef(null), useRef(null)];
   return(
-      <main className="h-screen w-screen black flex relative justify-center items-center">
-        <Navbar setDisplay={setDisplay} display={display}></Navbar>
-        <Display setDisplay={setDisplay} display={display}></Display>			
+      <main className="h-screen w-screen relative overflow-hidden">
+        <Navbar pages={pages}></Navbar>
+        <Display home={pages[0]} about={pages[1]} gallery={pages[2]} contact={pages[3]}></Display>			
       </main>
   )
 }

@@ -1,6 +1,6 @@
-const ContactForm = () => {
+const ContactForm = ({contact}) => {
     return (
-        <div className="w-full h-screen flex flex-col items-center justify-center ">
+        <div ref={contact} className="w-full h-screen flex flex-col items-center justify-center ">
             <h1 style={{transition: "all 0.5s ease"}} className="text-4xl font-bold text-white">Contact Me</h1>
             <p style={{transition: "all 0.5s ease"}} className="text-xl my-12 text-gray-100">Use this form to tell me about you.</p>
             <form className="text-base text-gray-100 flex flex-col gap-4 items-center w-full">
