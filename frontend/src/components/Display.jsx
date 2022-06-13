@@ -7,8 +7,8 @@ const Display = ({home,gallery,about,contact}) => {
         <div className="md:pl-48 w-full h-full">
             <div className="w-full h-full overflow-y-scroll">
                 <Home home={home}></Home>
-                <Gallery gallery={gallery}></Gallery>
                 <About about={about}></About>
+                <Gallery gallery={gallery}></Gallery>
                 <ContactForm contact={contact}></ContactForm>
             </div>
         </div>
