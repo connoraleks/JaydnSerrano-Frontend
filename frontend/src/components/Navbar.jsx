@@ -1,6 +1,6 @@
 const Navbar = ({pages}) => {
     const buttonHover = "text-white text-lg lg:text-xl hover:text-blue-500";
-    const nav = "hidden w-48 md:flex absolute left-0 h-screen flex-col justify-center gap-24 bg-gray-600 bg-opacity-50 backdrop-blur-lg box-border text-center border-r border-white";
+    const nav = "z-20 h-screen w-screen sm:w-48 flex absolute left-0 flex-col justify-center gap-24 bg-black bg-opacity-50 backdrop-blur-lg box-border text-center border-r border-white";
     const scrollTo = (ref) => {
         console.log(ref);
         if(ref.current) ref.current.scrollIntoView({behavior: "smooth", block: "start"});
