@@ -4,7 +4,7 @@ import Gallery from './Gallery'
 import About from './About'
 const Display = ({home,gallery,about,contact}) => {
     return (
-        <div className="md:pl-48 w-full h-full">
+        <div className="sm:pt-0 md:pl-48 w-full h-full">
             <div className="w-full h-full overflow-y-scroll">
                 <Home home={home}></Home>
                 <About about={about}></About>
