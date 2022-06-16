@@ -29,7 +29,7 @@ const Navbar = ({pages}) => {
         <div className="absolute top-0 left-0">
         {button && 
         <div className="absolute">
-        <button id="open" ref={openButton} class="relative group m-4 z-50 absolute md:hidden" style={{transition: "all 0.5s ease"}}  onClick={showNav}>
+        <button id="open" ref={openButton} class="relative group m-4 z-40 absolute md:hidden" style={{transition: "all 0.5s ease"}}  onClick={showNav}>
             <div class="relative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all bg-black ring-0 ring-gray-300 ring-opacity-30 duration-200 shadow-md">
             <div class="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-500 origin-center overflow-hidden group-focus:-rotate-180">
                 <div class="bg-white h-[2px] w-7 transform transition-all duration-500 group-focus:rotate-45 -translate-x-1"></div>
