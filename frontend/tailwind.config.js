@@ -17,6 +17,9 @@ module.exports = {
       animation: {
         enter: 'slide-in 1s ease-in-out',
         exit: 'slide-out 1s ease-in-out',
+      },
+      boxShadow: {
+        'md': '0px 0px 1rem rgba(0, 0, 0,0.3)',
       }
     },
   },
