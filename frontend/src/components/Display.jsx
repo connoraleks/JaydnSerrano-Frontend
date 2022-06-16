@@ -1,6 +1,6 @@
 import ContactForm from './ContactForm'
 import Home from './Home'
-import Gallery from './Gallery'
+import GallerySection from './GallerySection'
 import About from './About'
 const Display = ({home,gallery,about,contact}) => {
     return (
@@ -8,7 +8,7 @@ const Display = ({home,gallery,about,contact}) => {
             <div className="w-full h-full overflow-y-scroll">
                 <Home home={home}></Home>
                 <About about={about}></About>
-                <Gallery gallery={gallery}></Gallery>
+                <GallerySection gallery={gallery}></GallerySection>
                 <ContactForm contact={contact}></ContactForm>
             </div>
         </div>
