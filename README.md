@@ -1,2 +1,5 @@
-# Photography Portfolio Frontend
-by Studio 908
+# Jaydn Serrano Photography Frontend
+Framework: React, TailWindCSS
+Languages: HTML, JavaScript, JSX, CSS
+
+by Connor Aleksandrowicz
