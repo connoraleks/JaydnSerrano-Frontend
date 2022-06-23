@@ -1,2 +1,2 @@
-# Photography-Portfolio
-A website to show off professional and amateur photography skills.
+# Photography Portfolio Frontend
+by Studio 908
