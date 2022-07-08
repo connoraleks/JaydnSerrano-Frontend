@@ -1,7 +1,7 @@
 # Jaydn Serrano Photography Frontend
-Framework: React, TailWindCSS
+
+Libraries: React
+
+Frameworks: TailWindCSS
 
 Languages: HTML, JavaScript, JSX, CSS
-
-
-by Connor Aleksandrowicz
