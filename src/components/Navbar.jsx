@@ -2,7 +2,7 @@ import {useState, useEffect, useRef} from "react";
 const Navbar = ({pages}) => {
     const closeButton = useRef(null);
     const openButton = useRef(null);
-    const exit = () => {closeButton.current.focus(); closeButton.current.click();};
+    const exit = () => { if(closeButton.current !== null){ closeButton.current.focus(); closeButton.current.click();}};
     const hideNav = () => {closeButton.current.focus(); setNav("z-20 -translate-x-full md:translate-x-0 h-screen w-screen sm:w-48 flex absolute left-0 flex-col justify-center gap-24 bg-black bg-opacity-50 backdrop-blur-lg box-border text-center")};
     const showNav = () => {openButton.current.focus(); setNav("z-20 h-screen w-screen sm:w-48 flex absolute left-0 flex-col justify-center gap-24 bg-black bg-opacity-50 backdrop-blur-lg box-border text-center")};
     const [button, setButton] = useState(null);
