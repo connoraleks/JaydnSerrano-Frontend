@@ -9,6 +9,8 @@ const Accordion = styled((props) => (
     border: `1px solid ${theme.palette.divider}`,
     boxShadow: 'none',
     backgroundColor: 'black',
+    width: '100%',
+    minHeight: 'fit-content',
     '&:not(:last-child)': {
         borderBottom: 0,
     },
@@ -37,8 +39,15 @@ const Accordion = styled((props) => (
     },
     }));
     const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
-    padding: theme.spacing(2),
-    borderTop: '1px solid rgba(0, 0, 0, .125)',
+        padding: theme.spacing(2),
+        borderTop: '1px solid rgba(0, 0, 0, .125)',
+        '&::-webkit-scrollbar': {
+            display: 'none',
+        },
+        '&::-webkit-scrollbar-thumb': {
+            display: 'none',
+        },
+        color: 'white',
     }));
 
     export { Accordion, AccordionSummary, AccordionDetails };
