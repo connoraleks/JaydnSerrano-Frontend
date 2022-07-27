@@ -40,7 +40,7 @@ const GallerySection = ({gallery}) => {
             {galleryReadySections ?
                 Object.keys(galleryReadySections).map(section => {
                 return (
-                    <Accordion key={section} onClick={() => setOpenSection(section)}>
+                    <Accordion key={section}>
                         <AccordionSummary
                             expandIcon={<ExpandMoreIcon color="white"/>}
                             aria-controls="panel1a-content"
@@ -52,7 +52,7 @@ const GallerySection = ({gallery}) => {
                         <PhotoAlbum
                             photos={galleryReadySections[section]}
                             layout="rows"
-                            targetRowHeight={150}
+                            targetRowHeight={350}
                             onClick={(event, photo, index) => {
                                 setIndex(index)
                                 }
@@ -63,14 +63,6 @@ const GallerySection = ({gallery}) => {
                 )
             }
             ) : <Typography variant="h6">Loading...</Typography>}
-            { openSection !== null && <Lightbox
-                slides={galleryReadySections[openSection]}
-                open={index >= 0}
-                index={index}
-                close={() => setIndex(-1)}
-                // enable optional lightbox plugins
-                plugins={[Fullscreen, Slideshow, Thumbnails, Zoom]}
-            /> }
         </div>
     );
 }
