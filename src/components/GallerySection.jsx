@@ -1,13 +1,5 @@
 import PhotoAlbum from "react-photo-album";
-import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
-
-// import optional lightbox plugins
-import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
-import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
-import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
-import Zoom from "yet-another-react-lightbox/plugins/zoom";
-import "yet-another-react-lightbox/plugins/thumbnails.css";
 
 import sections from "./Photos";
 import Typography from '@mui/material/Typography';
@@ -16,8 +8,6 @@ import { useState, useEffect } from 'react';
 import { Accordion, AccordionSummary, AccordionDetails } from './CustomAccordion';
 const GallerySection = ({gallery}) => {
     const [galleryReadySections, setGalleryReadySections] = useState(null);
-    const [index, setIndex] = useState(-1);
-    const [openSection, setOpenSection] = useState(null);
     sections.then(response => {
         let galleryReady = {};
         if(response.data.success) {
@@ -53,10 +43,6 @@ const GallerySection = ({gallery}) => {
                             photos={galleryReadySections[section]}
                             layout="rows"
                             targetRowHeight={350}
-                            onClick={(event, photo, index) => {
-                                setIndex(index)
-                                }
-                            }
                         />
                         </AccordionDetails>
                     </Accordion>
