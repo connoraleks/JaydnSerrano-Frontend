@@ -13,8 +13,7 @@ const Navbar = ({pages}) => {
         if(ref.current) setTimeout(() => ref.current.scrollIntoView({behavior: "smooth", block: "start"}), 250);
     }
     useEffect(() => {
-        if(button === null) setButton(true);
-        else setTimeout(() => setButton(!button), 650);
+        setTimeout(() => setButton(b => b === null ? true : !b), 650);
     }, [nav]);
     return (
         <>
