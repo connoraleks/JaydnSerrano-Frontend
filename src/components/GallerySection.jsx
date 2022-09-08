@@ -1,7 +1,7 @@
 import PhotoAlbum from "react-photo-album";
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Accordion, AccordionSummary, AccordionDetails } from './CustomAccordion';
 const GallerySection = ({galleryref, directory}) => {
     const [expanded, setExpanded] = useState(false);
