@@ -22,15 +22,15 @@ const GallerySection = ({galleryref, directory}) => {
             <div ref={galleryref} className={galleryref != null ? "h-fit text-white py-8 border-2 border-gray-700 bg-black rounded-2xl" : "h-fit text-white bg-black"}>
                 {galleryref != null && <h3 className="font-bold text-4xl w-full text-center mb-4">Gallery</h3>}
                 {/* Create an accordion for each section in directory */}
-                {directory && directory.dirs.map((section) => {
+                {directory && directory.folders.map((section) => {
                     return (
-                        <Accordion id={section.id} expanded={expanded === section.id} key={section.id} onChange={handleChange(section.id)}>
+                        <Accordion id={section.name} expanded={expanded === section.name} key={section.name} onChange={handleChange(section.name)}>
                             <AccordionSummary
                                 expandIcon={<ExpandMoreIcon />}
                                 aria-controls={`${section.name}-content`}
                                 id={`${section.name}-header`}
                             >
-                                <Typography><span className="font-bold text-2xl">{section.name}</span> <br/> <span className="text-slate-500">{section.photos.length+ ' photos | ' + section.dirs.length + ' subcategories'}</span></Typography>
+                                <Typography><span className="font-bold text-2xl">{section.name}</span> <br/> <span className="text-slate-500">{section.photos.length+ ' photos | ' + section.folders.length + ' subcategories'}</span></Typography>
                             </AccordionSummary>
                             <AccordionDetails>
                                 {/* GallerySection for this layer */}

@@ -8,7 +8,11 @@ const Display = ({home,gallery,about,contact}) => {
     const [dirents, setDirents] = useState(null);
     const fetchDirents = async () => {
         const res = await axios('https://api.jaydnserrano.com/dirents');
-        if(res.data.success) setDirents(res.data.dirents);
+        console.log(res.data);
+        if(res.data['folders'][0]['name'] === 'root') setDirents(res.data['folders'][0]);
+        else{
+            alert('Error: root folder not found');
+        }
     }
 
     useEffect(() => {
