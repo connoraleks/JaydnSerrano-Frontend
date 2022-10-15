@@ -37,6 +37,23 @@ const GallerySection = ({galleryref, directory}) => {
                                 <GallerySection directory={section}></GallerySection>
                                 {/* PhotoAlbum for this layer */}
                                 <PhotoAlbum
+                                    renderPhoto={(props) => {
+                                        return (
+                                            <img
+                                                alt={props.alt}
+                                                style={{
+                                                    ...props.style,
+                                                    width: "100%",
+                                                    height: "auto",
+                                                    padding: 0,
+                                                    marginBottom: 0,
+                                                    borderRadius: '1rem',
+                                                    border: '1px solid black',
+                                                }}
+                                                {...props.imageProps}
+                                            />
+                                        );
+                                    }}
                                     photos={section.photos}
                                     layout='rows'
                                     margin={2}
